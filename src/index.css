@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body, #root {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Subtle divider */
+.divider {
+  @apply border-t border-vinyl-border;
+}
+
+/* Minimal button style */
+.btn {
+  @apply px-4 py-2 rounded transition-colors duration-200;
+}
+
+.btn-primary {
+  @apply bg-vinyl-accent text-vinyl-dark hover:bg-yellow-400;
+}
+
+.btn-secondary {
+  @apply bg-vinyl-surface text-vinyl-text hover:bg-vinyl-border;
+}
+
+/* Card style */
+.card {
+  @apply bg-vinyl-surface rounded border border-vinyl-border p-4;
+}
